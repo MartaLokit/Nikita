@@ -1,0 +1,30 @@
+﻿@model Applications
+
+<h2>Создания заявки</h2>
+<form asp-action="Create" asp-controller="AddZaiavka">
+    <p>
+        <label asp-for="EmailUser ">Email</label><br />
+        <input type="email" asp-for="EmailUser " />
+    </p>
+    <p>
+        @* <label asp-for="NameApp">Вид заявки</label><br />
+        <input type="text" asp-for="NameApp" /> *@
+            <label asp-for="NameApp">Вид услуги</label>
+            <select name="NameApp" id="NameApp">
+            <option value="">-- Выберите услугу --</option>
+            <option value="posev">ЛЕЧЕНИЕ ПОД МИКРОСКОПОМ</option>
+            <option value="obrabotca">ЭНДОДОНТИЯ</option>
+            <option value="pochvaobabotca">ЛЕЧЕНИЕ КАРИЕСА</option>
+            <option value="kormazakotovka">ПРОФИЛАКТИКА</option>
+            <option value="uborkazerna">ЭСТЕТИЧЕСКИЕ МЕРОПРИЯТИЯ</option>
+            <option value="uborkasvekl">ДЕТСКАЯ СТОМАТОЛОГИЯ</option>
+            </select>
+    </p>
+    <p>
+        <label asp-for="dateformation">Дата</label><br />
+        <input type="datetime" asp-for="dateformation" />
+    </p>
+    <p>
+        <input type="submit" value="Отправить" />
+    </p>
+</form>

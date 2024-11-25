@@ -1,0 +1,89 @@
+﻿<h2 style="color:chartreuse">НАШИ УСЛУГИ</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: LightSeaGreen
+        }
+    </style>
+ <font size="6" color="#fa8e47" face="serif">
+        <table style="color:white">
+    <tr align="center">
+        <th align="center">
+            <li>
+                <img src="~/css/2.1.png" width="120" height="80" text-align:center>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Services" asp-action="Tillage">Терапевтическая стоматология</a>
+            </li>
+        </th>
+        <th>
+            <img src="~/css/2.2.png" alt="Услуга" width="120" height="80" text-align:center>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Services" asp-action="Sowing">Эстетическая реставрация зубов</a>
+        </th>
+        <th>
+                <img src="~/css/2.3.png" alt="Услуга" width="120" height="80" text-align:center>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Services" asp-action="ForageProcurement">Виниринговое покрытие</a>
+        </th>
+        <th>
+                <img src="~/css/2.4.png" alt="Услуга" width="120" height="80" text-align:center>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Services" asp-action="GrainHarvesting">Детская стоматология</a>
+        </th>
+        
+    </tr>
+</table>
+<a></a>
+        <br>
+        <h2 style="color:chartreuse">НАШИ ЦЕНЫ</h2>
+        <a></a>
+        <br>
+        <br>
+ 
+    </font>
+    <font size="4" color="#000000" face="serif">
+         <table>
+            <tr>
+                <th> <h2 style="color:white">ЛЕЧЕНИЕ ПОД МИКРОСКОПОМ</h2></th>
+                <th> <h2 style="color:white">ЭНДОДОНТИЯ</h2></th>
+                <th> <h2 style="color:white">ЛЕЧЕНИЕ КАРИЕСА</h2></th>
+            <tr>
+                <td>
+                    <blockquote>
+                        – пломбирование 1 канала с помощью эндомотора — 210 р.
+                    </blockquote>
+                    <blockquote>
+                        - распломбировка 1 канала — 80 р.
+                    </blockquote>
+                    <blockquote>
+                        - диагностическая ревизия — 130 р.
+                    </blockquote>
+                </td>
+                <td>
+                    <blockquote>
+                        – пломбирование 1 канала с помощью эндомотора — 150 р.
+                    </blockquote>
+                    <blockquote>
+                        - временное пломбирование 1 канала — 50 р.
+                    </blockquote>
+                    <blockquote>
+                        - реставрация после лечения — 240 р.
+                    </blockquote>
+                </td>
+                <td>
+                    <blockquote>
+                        – лечение кариеса — 140 − 210 р.
+                    </blockquote>
+                    <blockquote>
+                        – восстановление коронковой части зуба фотокомпозитным материалом прямым способом с восстановлением анатомической формы зуба  — 240 р
+                    </blockquote>
+                </td>
+            </tr> <!--ряд с ячейками тела таблицы-->
+        </table>
+</font>
+    <div style="float:left;width:200px;height:300px;border:1px;"></div>
+    <form asp-action="Aplic" asp-controller="User">
+        <p>
+            <input type="submit" value="Запись на прием" />
+        </p>
+    </form>
+</head>
+</html>
